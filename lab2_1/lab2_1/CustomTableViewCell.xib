@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="130" id="KGk-i7-Jjw" customClass="CustomTableViewCell" customModule="lab2_1" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="130"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="130"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="otu-wu-1j6">
+                        <rect key="frame" x="235" y="83" width="75" height="37"/>
+                        <state key="normal" title="Button"/>
+                        <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                        <connections>
+                            <action selector="myButton:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="FRT-Bd-eEC"/>
+                        </connections>
+                    </button>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="homepod" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="IRg-D9-qNf">
+                        <rect key="frame" x="10" y="10.666666666666671" width="128" height="109"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kfe-34-k4i">
+                        <rect key="frame" x="148" y="26" width="162" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B26-lc-wFO">
+                        <rect key="frame" x="148" y="57" width="162" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="IRg-D9-qNf" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="1Hn-IG-zWs"/>
+                    <constraint firstAttribute="trailing" secondItem="B26-lc-wFO" secondAttribute="trailing" constant="10" id="54f-vD-pkP"/>
+                    <constraint firstItem="kfe-34-k4i" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="26" id="9e3-N5-WTv"/>
+                    <constraint firstItem="IRg-D9-qNf" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="JfZ-D6-UH2"/>
+                    <constraint firstItem="B26-lc-wFO" firstAttribute="top" secondItem="kfe-34-k4i" secondAttribute="bottom" constant="10" id="OrD-Xr-M6W"/>
+                    <constraint firstAttribute="trailing" secondItem="kfe-34-k4i" secondAttribute="trailing" constant="10" id="Q4T-U7-gy9"/>
+                    <constraint firstItem="kfe-34-k4i" firstAttribute="leading" secondItem="IRg-D9-qNf" secondAttribute="trailing" constant="10" id="S92-89-S6H"/>
+                    <constraint firstItem="otu-wu-1j6" firstAttribute="top" secondItem="B26-lc-wFO" secondAttribute="bottom" constant="5" id="cH2-O2-ppx"/>
+                    <constraint firstAttribute="trailing" secondItem="otu-wu-1j6" secondAttribute="trailing" constant="10" id="cyx-c7-Apq"/>
+                    <constraint firstAttribute="bottom" secondItem="IRg-D9-qNf" secondAttribute="bottom" constant="10" id="e36-9m-Hy4"/>
+                    <constraint firstItem="B26-lc-wFO" firstAttribute="leading" secondItem="IRg-D9-qNf" secondAttribute="trailing" constant="10" id="hGa-hL-DHh"/>
+                    <constraint firstItem="IRg-D9-qNf" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" multiplier="0.4" id="j2Z-Lt-jGt"/>
+                    <constraint firstAttribute="bottom" secondItem="otu-wu-1j6" secondAttribute="bottom" constant="10" id="qC4-cE-yTc"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="myImageView" destination="IRg-D9-qNf" id="384-kL-HDd"/>
+                <outlet property="mySubtitle" destination="B26-lc-wFO" id="U1v-hb-Pvb"/>
+                <outlet property="myTitle" destination="kfe-34-k4i" id="ncF-L8-OK5"/>
+            </connections>
+            <point key="canvasLocation" x="19.847328244274809" y="19.014084507042256"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="homepod" catalog="system" width="116" height="128"/>
+    </resources>
+</document>
